@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+
+<body>
+  <div id="app"></div>
+  <nav></nav>
+  <canvas id="bg">Hi</canvas>
+  <main>
+    <header>
+      <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+      <svg id="filter">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+          </filter>
+        </defs>
+      </svg>
+
+    </header>
+
+    <blockquote>
+      <p>Recent Computer Science Graduate from the University of Hull</p>
+    </blockquote>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, My name is Ali, and I recently completed my Computer Science degree from the University of Hull and
+        achieved a First class BSc with Honours. During my degree, I spread out within the different disciplines within
+        Computer Science - from electronics and AI to Web Development and working with Agile in a team. </p>
+
+      <p>I spend most of my free time learning new things, including PCB design, 3D modelling and Video Game
+        Development. I am currently working on a custom macro-pad keyboard, learning 3D modelling tools such as Blender
+        for my game development and Fusion 360 for my more technical designs.</p>
+
+      <p>From a development standpoint, I am in the early design stages for a web app. The app will function as a more
+        complex bookmarking system. The idea for this app started during my time researching and writing my
+        dissertation. I found it very frustrating that I had to keep many tabs open in my browser, usually for an
+        extended amount of time. Thus I came up with the idea of having a web app that keeps track of browsing sessions
+        and keeps a description of all of the websites they are currently browsing.</p>
+    </section>
+
+    <section class="full">
+      <h2>Disertation</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus reiciendis et, quam omnis dicta
+        suscipit non esse adipisci, modi, nobis facilis quos? Minima enim pariatur sapiente cupiditate eveniet
+        aspernatur?</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias dicta fugiat placeat sequi dolores
+        commodi laborum, quo magni nesciunt enim temporibus ducimus possimus quis necessitatibus tenetur nulla excepturi
+        laboriosam!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi fuga alias, mollitia aspernatur doloribus
+        minus voluptatem eligendi error ad, dolorum at voluptatibus officia numquam earum autem aliquam, corrupti eos
+        magni.</p>
+    </section>
+
+    <section class="left">
+      <h2>Recent Work</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus reiciendis et, quam omnis dicta
+        suscipit non esse adipisci, modi, nobis facilis quos? Minima enim pariatur sapiente cupiditate eveniet
+        aspernatur?</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias dicta fugiat placeat sequi dolores
+        commodi laborum, quo magni nesciunt enim temporibus ducimus possimus quis necessitatibus tenetur nulla excepturi
+        laboriosam!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi fuga alias, mollitia aspernatur doloribus
+        minus voluptatem eligendi error ad, dolorum at voluptatibus officia numquam earum autem aliquam, corrupti eos
+        magni.</p>
+    </section>
+    <section>
+      <h1>Contact Information</h1>
+      <p>Email: ali@altemimi.xyz</p>
+      <p> <a href="https://github.com/avifo">Github</a></p><br>
+      <p> <a href="https://www.linkedin.com/in/ali-al-temimi-8995b4196/">Linkedin</a></p>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+  <script src="/morph.js"></script>
+</body>
+
+</html>
