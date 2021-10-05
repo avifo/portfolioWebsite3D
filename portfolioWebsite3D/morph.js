@@ -4,7 +4,7 @@ const elts = {
 };
 
 
-// The strings to morph between. You can change these to anything you want!
+// The strings to morph between.
 const texts = [
     "Hi,",
     "My name is",
@@ -39,7 +39,7 @@ function doMorph() {
     setMorph(fraction);
 }
 
-// A lot of the magic happens here, this is what applies the blur filter to the text.
+// Applies the blur filter
 function setMorph(fraction) {
     // fraction = Math.cos(fraction * Math.PI) / -2 + .5;
 
