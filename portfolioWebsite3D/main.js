@@ -54,8 +54,8 @@ const gridHelper = new THREE.GridHelper(200, 50); // grid line
 //const controls = new OrbitControls(camera, renderer.domElement); //system to control the camera 
 
 function addStarBlue() { // function that populates the scene with stars 
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const material = new THREE.MeshStandardMaterial({ color: 0xBED6DE })
+    const geometry = new THREE.SphereGeometry(0.25, 24, 8);
+    const material = new THREE.MeshStandardMaterial({ color: 0xBED6DE, wireframe: true })
     const star = new THREE.Mesh(geometry, material);
 
     const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
@@ -66,8 +66,8 @@ function addStarBlue() { // function that populates the scene with stars
 }
 
 function addStarYellow() { // function that populates the scene with stars
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const material = new THREE.MeshStandardMaterial({ color: 0xffff70 })
+    const geometry = new THREE.SphereGeometry(0.25, 24, 8);
+    const material = new THREE.MeshStandardMaterial({ color: 0xffff70, wireframe: true })
     const star = new THREE.Mesh(geometry, material);
 
     const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
@@ -78,11 +78,11 @@ function addStarYellow() { // function that populates the scene with stars
 }
 
 function addStarRed() { // function that populates the scene with stars
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const material = new THREE.MeshStandardMaterial({ color: 0xff7070 })
+    const geometry = new THREE.SphereGeometry(0.25, 24, 8);
+    const material = new THREE.MeshStandardMaterial({ color: 0xff7070, wireframe: true })
     const star = new THREE.Mesh(geometry, material);
 
-    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
+    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100)); //creates x y z position of star
 
     star.position.set(x, y, z);
     scene.add(star);
@@ -97,8 +97,8 @@ Array(100).fill().forEach(addStarRed); // adds red stars
 //scene.background = spaceTexture;
 
 //moon
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+//const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+//const normalTexture = new THREE.TextureLoader().load('normal.jpg');
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
     new THREE.MeshStandardMaterial({

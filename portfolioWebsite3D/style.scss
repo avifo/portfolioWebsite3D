@@ -66,6 +66,25 @@ blockquote{
         line-height: 1;
     }
 }
+ul{
+    color: white;
+    list-style: none;
+    text-align: center;
+    li{
+        a{
+            color: white;
+            text-decoration: none;
+            cursor:pointer
+        }
+        a:hover{
+
+        }
+    }
+    
+}
+#email, #giuhub, #linkedin{ 
+    //border: 2px solid black;
+}
 
 .left{
     grid-column: 6/12; 

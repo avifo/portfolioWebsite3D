@@ -70,6 +70,18 @@ blockquote p {
   line-height: 1;
 }
 
+ul {
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .left {
   -ms-grid-column: 6;
   -ms-grid-column-span: 6;
